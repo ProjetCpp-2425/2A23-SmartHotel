@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HotelManagerUI</class>
+ <widget class="QWidget" name="HotelManagerUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>819</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox_connection">
+     <property name="styleSheet">
+      <string notr="true">QGroupBox
+{
+border-radius:20px;
+border:solid;
+border-color:white;
+padding:5px;
+color:rgb(19,65,43);
+background-color:rgb(225,209,182);
+}
+
+QGroupBox QWidget
+{
+color:black;
+}
+</string>
+     </property>
+     <property name="title">
+      <string>Serial Connection</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_connection">
+      <item>
+       <widget class="QLabel" name="label_com">
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+color:rgb(19,65,43);
+font-weight:600;
+}</string>
+        </property>
+        <property name="text">
+         <string>Select COM Port:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_ports">
+        <property name="styleSheet">
+         <string notr="true">QComboBox
+{
+margin-right:10px;
+appearance:none;
+padding-left:15px;
+padding-right:20px;
+font-weight:600;
+background-color:rgb(129,153,101);
+height:35px;
+}
+QComboBox::drop-down {
+	border:none;
+}
+QComboBox::down-arrow {
+		image:url(:/Purestay/images/icones/arrow.png);
+	padding-right:20px;
+	width:20px;
+	color:white;
+}
+
+QComboBox::QListView {
+background-color:rgb(129,153,101);
+}
+
+QComboBox::QListViewItem {
+background-color:rgb(129,153,101);
+}
+
+
+
+
+
+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_scan">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+border-radius:15px;
+margin-top:15px;
+height:40px;
+background-color:rgb(97,125,77);
+color: white;
+font-weight:600;
+}
+QPushButton:hover
+{
+background-color:rgb(47,89,73);
+}</string>
+        </property>
+        <property name="text">
+         <string>Scan Ports</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_connect">
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+border-radius:15px;
+margin-top:15px;
+height:40px;
+background-color:rgb(97,125,77);
+color: white;
+font-weight:600;
+}
+QPushButton:hover
+{
+background-color:rgb(47,89,73);
+}</string>
+        </property>
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_status">
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+color:rgb(19,65,43);
+font-weight:600;
+}</string>
+        </property>
+        <property name="text">
+         <string>Status: Disconnected</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_program">
+     <property name="styleSheet">
+      <string notr="true">QGroupBox
+{
+border-radius:20px;
+border:solid;
+border-color:white;
+padding:5px;
+color:rgb(19,65,43);
+background-color:rgb(225,209,182);
+}
+
+QGroupBox QWidget
+{
+color:black;
+}
+</string>
+     </property>
+     <property name="title">
+      <string>Hotel Program Manager</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_day">
+        <item>
+         <widget class="QLabel" name="label_day">
+          <property name="styleSheet">
+           <string notr="true">QLabel
+{
+color:rgb(19,65,43);
+font-weight:600;
+}</string>
+          </property>
+          <property name="text">
+           <string>Select Day:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_days">
+          <property name="styleSheet">
+           <string notr="true">QComboBox
+{
+margin-right:10px;
+appearance:none;
+padding-left:15px;
+padding-right:20px;
+font-weight:600;
+background-color:rgb(129,153,101);
+height:35px;
+}
+QComboBox::drop-down {
+	border:none;
+}
+QComboBox::down-arrow {
+		image:url(:/Purestay/images/icones/arrow.png);
+	padding-right:20px;
+	width:20px;
+	color:white;
+}
+
+QComboBox::QListView {
+background-color:rgb(129,153,101);
+}
+
+QComboBox::QListViewItem {
+background-color:rgb(129,153,101);
+}
+
+
+
+
+
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="textEdit_program">
+        <property name="styleSheet">
+         <string notr="true">QTextEdit
+{
+border:solid;
+border-color:rgb(28,96,101);
+border-width:1px;
+background-color:rgb(255,255,255);
+
+border-radius:15px;
+height:35px;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>Enter program for selected day...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_buttons">
+        <item>
+         <widget class="QPushButton" name="pushButton_send">
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+border-radius:15px;
+margin-top:15px;
+height:40px;
+background-color:rgb(97,125,77);
+color: white;
+font-weight:600;
+}
+QPushButton:hover
+{
+background-color:rgb(47,89,73);
+}</string>
+          </property>
+          <property name="text">
+           <string>Send Program</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_clear">
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+border-radius:15px;
+margin-top:15px;
+height:40px;
+background: rgb(150,70,70);
+color: white;
+font-weight:600;
+}
+QPushButton:hover
+{
+background-color:rgb(47,89,73);
+}</string>
+          </property>
+          <property name="text">
+           <string>Clear</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

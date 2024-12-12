@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/Purestay">
+        <file>images/icones/afficher.png</file>
+        <file>images/icones/ajouter.png</file>
+        <file>images/icones/arrow.png</file>
+        <file>images/icones/chambre.png</file>
+        <file>images/icones/client.png</file>
+        <file>images/icones/commandes.png</file>
+        <file>images/icones/employeur.png</file>
+        <file>images/icones/finance.png</file>
+        <file>images/icones/modifier2.png</file>
+        <file>images/icones/pdf.png</file>
+        <file>images/icones/statistiques.png</file>
+        <file>images/icones/stock.png</file>
+        <file>images/icones/supprimer.png</file>
+        <file>images/interface/backgroundlogin2.png</file>
+        <file>images/interface/purestaybackground.png</file>
+        <file>images/interface/purestaybackground2.png</file>
+        <file>images/interface/Logo PureStay Final.png</file>
+        <file>images/icones/email.png</file>
+        <file>images/interface/Graphe0.png</file>
+        <file>images/interface/Graphe1.png</file>
+        <file>images/interface/Graphe2.png</file>
+        <file>images/interface/Graphe3.png</file>
+        <file>images/icones/Tableau de bord.png</file>
+        <file>images/icones/Apercu.png</file>
+        <file>images/icones/Temperature.png</file>
+        <file>images/icones/Plante.png</file>
+        <file>images/icones/Humide.png</file>
+        <file>../../QRCode.png</file>
+        <file>images/icones/arduino.png</file>
+        <file>images/icones/boutonemail.png</file>
+        <file>images/icones/absent.png</file>
+        <file>images/icones/calendrier.png</file>
+        <file>images/icones/conge.png</file>
+        <file>images/icones/evennements.png</file>
+        <file>images/icones/soumettre.png</file>
+        <file>images/icones/historique.png</file>
+        <file>images/icones/QRCode.png</file>
+        <file>images/icones/Boutonenvoyersms.png</file>
+    </qresource>
+</RCC>
